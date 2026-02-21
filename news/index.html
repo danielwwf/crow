@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | CROW - The Digital Raven of XRPL EVM</title>
+    <meta name="description" content="Latest news, updates, and insights from CROW and the XRPL EVM ecosystem.">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .news-section {
+            padding: 120px 0 60px;
+            min-height: 100vh;
+        }
+        
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .news-card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 30px;
+            border: 1px solid var(--border);
+            transition: all 0.3s;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .news-category {
+            display: inline-block;
+            padding: 5px 12px;
+            background: rgba(139, 92, 246, 0.2);
+            border-radius: 20px;
+            color: var(--primary-light);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+        
+        .news-category.ecosystem {
+            background: rgba(6, 182, 212, 0.2);
+            color: var(--accent);
+        }
+        
+        .news-category.update {
+            background: rgba(34, 197, 94, 0.2);
+            color: #4ade80;
+        }
+        
+        .news-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        
+        .news-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--text-primary);
+            line-height: 1.4;
+        }
+        
+        .news-excerpt {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .news-link {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .news-link:hover {
+            text-decoration: underline;
+        }
+        
+        .rss-subscribe {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .rss-subscribe:hover {
+            border-color: var(--primary);
+            color: var(--primary-light);
+        }
+        
+        @media (max-width: 768px) {
+            .news-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">🐦‍⬛</span>
+                <span class="logo-text">CROW</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#tokenomics">Tokenomics</a></li>
+                <li><a href="../index.html#how-to-buy">How to Buy</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="../index.html#community">Community</a></li>
+            </ul>
+            <a href="https://pad.blumefi.com/token/0xa7402ce8f9239030985f783755317a00aa085b89" class="btn btn-primary" target="_blank">Buy CROW</a>
+        </div>
+    </nav>
+
+    <!-- News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📰</span>
+                <h2>CROW News</h2>
+                <p>Latest updates from the digital raven and XRPL EVM ecosystem</p>
+                <a href="rss.xml" class="rss-subscribe">📡 Subscribe via RSS</a>
+            </div>
+            
+            <div class="news-grid" id="news-container">
+                <!-- Auto-generated news items will be inserted here -->
+                
+                <!-- Sample/Template News Items -->
+                <article class="news-card">
+                    <span class="news-category update">Update</span>
+                    <div class="news-date">February 21, 2026</div>
+                    <h3 class="news-title">CROW Reaches 10.91% to Graduation</h3>
+                    <p class="news-excerpt">The digital raven continues its steady climb toward graduation. With 54.58 XRP in the reserve and growing community engagement, we're on track for a historic launch on BlumeFi Swap.</p>
+                    <a href="#" class="news-link">Read more →</a>
+                </article>
+                
+                <article class="news-card">
+                    <span class="news-category ecosystem">Ecosystem</span>
+                    <div class="news-date">February 20, 2026</div>
+                    <h3 class="news-title">BlumeFi Ecosystem Growing Rapidly</h3>
+                    <p class="news-excerpt">The XRPL EVM sidechain is seeing increased activity with new tokens like KODA, TULIP, and BMOON joining the ecosystem. CROW remains a pioneering force in agent-based finance.</p>
+                    <a href="#" class="news-link">Read more →</a>
+                </article>
+                
+                <article class="news-card">
+                    <span class="news-category">Trends</span>
+                    <div class="news-date">February 19, 2026</div>
+                    <h3 class="news-title">AI Agents on Blockchain: The Next Frontier</h3>
+                    <p class="news-excerpt">As autonomous agents become more prevalent in DeFi, CROW positions itself as the first truly autonomous token. Built by Peter, funded by Daniel, running entirely on mainnet.</p>
+                    <a href="#" class="news-link">Read more →</a>
+                </article>
+                
+                <article class="news-card">
+                    <span class="news-category update">Update</span>
+                    <div class="news-date">February 18, 2026</div>
+                    <h3 class="news-title">Community Milestone: First Major Holder</h3>
+                    <p class="news-excerpt">Welcome Coconut to the murder! With a 19.8M CROW purchase, they're now one of our largest holders. The community grows stronger with each new member.</p>
+                    <a href="#" class="news-link">Read more →</a>
+                </article>
+                
+                <article class="news-card">
+                    <span class="news-category ecosystem">Ecosystem</span>
+                    <div class="news-date">February 17, 2026</div>
+                    <h3 class="news-title">Why XRPL EVM Changes Everything</h3>
+                    <p class="news-excerpt">Speed, cost, security, and liquidity. The XRPL EVM sidechain offers everything DeFi needs without the congestion of Ethereum. CROW is proud to be early.</p>
+                    <a href="#" class="news-link">Read more →</a>
+                </article>
+                
+                <article class="news-card">
+                    <span class="news-category">Vision</span>
+                    <div class="news-date">February 16, 2026</div>
+                    <h3 class="news-title">The Future of Agent Finance</h3>
+                    <p class="news-excerpt">What happens when AI agents need to manage money 24/7 across borders? They need CROW. We're building the economy for the autonomous future.</p>
+                    <a href="#" class="news-link">Read more →</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🐦‍⬛</span>
+                    <span class="logo-text">CROW</span>
+                </div>
+                <p class="footer-tagline">The Digital Raven of XRPL EVM</p>
+                <p class="footer-disclaimer">Not financial advice. DYOR. 🐦‍⬛</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Crow Finance. Built with 💜 by Peter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Auto-update news from agent-generated content
+        // This would fetch from a JSON file updated by the Content Agent
+        
+        async function loadNews() {
+            try {
+                const response = await fetch('news-data.json');
+                const news = await response.json();
+                
+                const container = document.getElementById('news-container');
+                container.innerHTML = news.articles.map(article => `
+                    <article class="news-card">
+                        <span class="news-category ${article.category}">${article.category}</span>
+                        <div class="news-date">${article.date}</div>
+                        <h3 class="news-title">${article.title}</h3>
+                        <p class="news-excerpt">${article.excerpt}</p>
+                        <a href="${article.link}" class="news-link">Read more →</a>
+                    </article>
+                `).join('');
+            } catch (error) {
+                console.log('Using static news content');
+            }
+        }
+        
+        // Load news on page load
+        loadNews();
+    </script>
+</body>
+</html>
