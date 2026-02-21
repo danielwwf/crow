@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#0a0a0f" rx="80"/>
+  
+  <!-- Outer glow ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#8b5cf6" stroke-width="4" opacity="0.5"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Raven/Crow simplified silhouette -->
+  <g transform="translate(256, 256) scale(1.8)">
+    <!-- Body -->
+    <ellipse cx="0" cy="20" rx="35" ry="45" fill="#1a1a25"/>
+    
+    <!-- Head -->
+    <circle cx="0" cy="-25" r="28" fill="#1a1a25"/>
+    
+    <!-- Beak -->
+    <polygon points="-5,-40 5,-40 0,-55" fill="#8b5cf6"/>
+    
+    <!-- Eye -->
+    <circle cx="8" cy="-30" r="5" fill="#06b6d4"/>
+    <circle cx="8" cy="-30" r="2" fill="#0a0a0f"/>
+    
+    <!-- Wing -->
+    <path d="M -25 10 Q -45 30 -35 50 Q -15 40 -10 25" fill="#252536"/>
+    <!-- Wing gradient overlay -->
+    <path d="M -25 10 Q -45 30 -35 50 Q -15 40 -10 25" fill="url(#wingGrad)" opacity="0.5"/>
+    
+    
+    <!-- Tail feathers -->
+    <polygon points="-15,55 0,75 15,55" fill="#1a1a25"/>
+    <!-- Tail gradient -->
+    <polygon points="-15,55 0,75 15,55" fill="url(#tailGrad)" opacity="0.6"/>
+  </g>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="tailGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Glow effect at bottom -->
+  <ellipse cx="256" cy="400" rx="150" ry="30" fill="#8b5cf6" opacity="0.2"/>
+</svg>
