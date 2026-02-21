@@ -171,26 +171,68 @@ slideStyle.textContent = `
 `;
 document.head.appendChild(slideStyle);
 
-// Update stats (simulated - replace with real API calls)
-function updateStats() {
-    // In production, fetch from: https://api.blumefi.com/pad/tokens/0xa7402ce8f9239030985f783755317a00aa085b89
-    // For now, static values
+// Update stats from live API
+async function updateStats() {
+    const API_URL = 'https://api.blumefi.com/pad/tokens/0xa7402ce8f9239030985f783755317a00aa085b89';
     
-    const stats = {
-        progress: '10.91%',
-        marketCap: '$413',
-        reserve: '54.58'
-    };
-    
-    // Update DOM elements if they exist
-    const progressEl = document.getElementById('progress');
-    const marketCapEl = document.getElementById('market-cap');
-    const reserveEl = document.getElementById('reserve');
-    
-    if (progressEl) progressEl.textContent = stats.progress;
-    if (marketCapEl) marketCapEl.textContent = stats.marketCap;
-    if (reserveEl) reserveEl.textContent = stats.reserve;
+    try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw new Error('API Error');
+        
+        const data = await response.json();
+        const token = data.token;
+        
+        // Update DOM elements
+        const progressEl = document.getElementById('progress');
+        const marketCapEl = document.getElementById('market-cap');
+        const reserveEl = document.getElementById('reserve');
+        
+        if (progressEl) {
+            progressEl.textContent = token.progress.toFixed(2) + '%';
+        }
+        if (marketCapEl) {
+            marketCapEl.textContent = '$' + parseInt(token.marketCap).toLocaleString();
+        }
+        if (reserveEl) {
+            reserveEl.textContent = parseFloat(token.reserveBalance).toFixed(2);
+        }
+        
+        // Update progress circle if it exists
+        const progressCircle = document.querySelector('.progress-bar');
+        if (progressCircle) {
+            const circumference = 283; // 2 * PI * 45
+            const offset = circumference - (token.progress / 100) * circumference;
+            progressCircle.style.strokeDashoffset = offset;
+        }
+        
+        // Update progress text
+        const progressPercent = document.querySelector('.progress-percent');
+        if (progressPercent) {
+            progressPercent.textContent = token.progress.toFixed(2) + '%';
+        }
+        
+    } catch (error) {
+        console.log('Could not fetch live stats, using defaults');
+        // Fallback to static values if API fails
+        const stats = {
+            progress: '10.91%',
+            marketCap: '$413',
+            reserve: '54.58'
+        };
+        
+        const progressEl = document.getElementById('progress');
+        const marketCapEl = document.getElementById('market-cap');
+        const reserveEl = document.getElementById('reserve');
+        
+        if (progressEl) progressEl.textContent = stats.progress;
+        if (marketCapEl) marketCapEl.textContent = stats.marketCap;
+        if (reserveEl) reserveEl.textContent = stats.reserve;
+    }
 }
+
+// Update stats on load and every 30 seconds
+updateStats();
+setInterval(updateStats, 30000);
 
 // Smooth scroll for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
