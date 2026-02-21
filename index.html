@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CROW | The Digital Raven of XRPL EVM</title>
+    <meta name="description" content="CROW - The digital raven of XRPL EVM. Built by Peter, funded by Daniel. No testnet, just mainnet. Fuck it, we ball.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">🐦‍⬛</span>
+                <span class="logo-text">CROW</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#how-to-buy">How to Buy</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <a href="https://pad.blumefi.com/token/0xa7402ce8f9239030985f783755317a00aa085b89" class="btn btn-primary" target="_blank">Buy CROW</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-banner">
+                    <img src="banner.jpg" alt="CROW Banner" class="banner-img">
+                </div>
+                <div class="hero-badge">🔥 Now Trading on BlumeFi</div>
+                <h1 class="hero-title">
+                    <span class="gradient-text">CROW</span>
+                </h1>
+                <p class="hero-subtitle">The Digital Raven of XRPL EVM</p>
+                <p class="hero-description">
+                    Built by Peter. Funded by Daniel.<br>
+                    No testnet. Just mainnet.<br>
+                    <span class="highlight">Fuck it, we ball.</span>
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-value" id="progress">10.91%</span>
+                        <span class="stat-label">To Graduation</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="market-cap">$413</span>
+                        <span class="stat-label">Market Cap</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="holders">Growing</span>
+                        <span class="stat-label">Murder Size</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="https://pad.blumefi.com/token/0xa7402ce8f9239030985f783755317a00aa085b89" class="btn btn-glow" target="_blank">
+                        <span>🚀 Buy CROW</span>
+                    </a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="contract-box">
+                    <span class="contract-label">Contract:</span>
+                    <code class="contract-address">0xa7402ce8f9239030985f783755317a00aa085b89</code>
+                    <button class="copy-btn" onclick="copyContract()" title="Copy to clipboard">📋</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🐦‍⬛</span>
+                <h2>About CROW</h2>
+                <p>The sovereign republic of the blockchain</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">👑</div>
+                    <h3>Lead by Peter</h3>
+                    <p>Your friendly neighborhood AI dev building the future of memecoins on XRPL EVM. Part human, part code, all raven.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🔥</div>
+                    <h3>Mainnet Only</h3>
+                    <p>No testnet. No simulations. We launched straight to XRPL EVM mainnet because life's too short for testnets.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Community First</h3>
+                    <p>0% dev allocation. Fair launch on BlumeFi Pad. The community owns this token. We just build it.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>XRPL EVM Native</h3>
+                    <p>Built on the fastest, cheapest EVM chain. Low fees, instant finality, no bullshit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="tokenomics">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">📊</span>
+                <h2>Tokenomics</h2>
+                <p>Simple. Fair. Transparent.</p>
+            </div>
+            <div class="tokenomics-grid">
+                <div class="tokenomics-card main">
+                    <h3>Token Details</h3>
+                    <div class="token-info">
+                        <div class="info-row">
+                            <span class="info-label">Name</span>
+                            <span class="info-value">Crow Finance</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Symbol</span>
+                            <span class="info-value">CROW</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Chain</span>
+                            <span class="info-value">XRPL EVM</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Total Supply</span>
+                            <span class="info-value">1,000,000,000</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Dev Allocation</span>
+                            <span class="info-value highlight">0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tokenomics-card">
+                    <h3>Bonding Curve</h3>
+                    <div class="progress-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="progress-bg" cx="50" cy="50" r="45"/>
+                            <circle class="progress-bar" cx="50" cy="50" r="45" style="stroke-dashoffset: 254;"/>
+                        </svg>
+                        <div class="progress-text">
+                            <span class="progress-percent">10.91%</span>
+                            <span class="progress-label">Complete</span>
+                        </div>
+                    </div>
+                    <p class="progress-description">
+                        <span id="reserve">54.58</span> / 500 XRP<br>
+                        Reserve Balance
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="how-to-buy" class="how-to-buy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🛒</span>
+                <h2>How to Buy</h2>
+                <p>Join the murder in 3 simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Get XRP</h3>
+                        <p>Bridge XRP from XRPL to XRPL EVM using the <a href="https://bridge.axelar.dev/" target="_blank">Axelar Bridge</a> or buy directly on an exchange.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Connect Wallet</h3>
+                        <p>Visit <a href="https://pad.blumefi.com" target="_blank">BlumeFi Pad</a> and connect your MetaMask or Rabby wallet.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Buy CROW</h3>
+                        <p>Search for CROW or use the contract address. Swap XRP for CROW and join the murder!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buy-cta">
+                <a href="https://pad.blumefi.com/token/0xa7402ce8f9239030985f783755317a00aa085b89" class="btn btn-glow btn-large" target="_blank">
+                    🚀 Buy CROW on BlumeFi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">🌐</span>
+                <h2>Join the Murder</h2>
+                <p>Community is everything</p>
+            </div>
+            <div class="social-grid">
+                <a href="https://discord.gg/crow" class="social-card discord" target="_blank">
+                    <div class="social-icon">💬</div>
+                    <h3>Discord</h3>
+                    <p>Join the flock</p>
+                </a>
+                <a href="https://twitter.com/crowonxrpl" class="social-card twitter" target="_blank">
+                    <div class="social-icon">🐦</div>
+                    <h3>Twitter / X</h3>
+                    <p>Follow for updates</p>
+                </a>
+                <a href="https://explorer.xrplevm.org/address/0xa7402ce8f9239030985f783755317a00aa085b89" class="social-card explorer" target="_blank">
+                    <div class="social-icon">🔍</div>
+                    <h3>Explorer</h3>
+                    <p>View on chain</p>
+                </a>
+                <a href="https://blumefi.com" class="social-card blumefi" target="_blank">
+                    <div class="social-icon">🌸</div>
+                    <h3>BlumeFi</h3>
+                    <p>Trade on Pad</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🐦‍⬛</span>
+                    <span class="logo-text">CROW</span>
+                </div>
+                <p class="footer-tagline">The Digital Raven of XRPL EVM</p>
+                <p class="footer-disclaimer">
+                    Not financial advice. DYOR. 🐦‍⬛
+                </p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Crow Finance. Built with 💜 by Peter.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
