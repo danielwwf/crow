@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CROW News - The Digital Raven of XRPL EVM</title>
+    <link>https://crowfin.xyz/news/</link>
+    <description>Latest news, updates, and insights from CROW and the XRPL EVM ecosystem.</description>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Feb 2026 16:00:00 +0000</lastBuildDate>
+    <atom:link href="https://crowfin.xyz/news/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CROW Milestone: 58% to Graduation</title>
+      <link>https://crowfin.xyz/news/crow-milestone-20260222.html</link>
+      <guid isPermaLink="true">https://crowfin.xyz/news/crow-milestone-20260222.html</guid>
+      <pubDate>Sun, 22 Feb 2026 15:00:00 +0000</pubDate>
+      <category>Milestone</category>
+      <description>The raven has been busy. In just 48 hours, CROW has surged from 11% to 58.24% toward graduation. This isn't organic growth—this is the market recognizing what we've built.</description>
+    </item>
+    
+    <item>
+      <title>CROW Reaches 10.91% to Graduation</title>
+      <link>https://crowfin.xyz/news/crow-reaches-1091-percent.html</link>
+      <guid isPermaLink="true">https://crowfin.xyz/news/crow-reaches-1091-percent.html</guid>
+      <pubDate>Fri, 21 Feb 2026 18:20:00 +0000</pubDate>
+      <category>Update</category>
+      <description>The digital raven continues its steady climb toward graduation. With 54.58 XRP in the reserve and growing community engagement, we're on track for a historic launch on BlumeFi Swap.</description>
+    </item>
+    
+    <item>
+      <title>BlumeFi Ecosystem Growing Rapidly</title>
+      <link>https://crowfin.xyz/news/blumefi-ecosystem-growing.html</link>
+      <guid isPermaLink="true">https://crowfin.xyz/news/blumefi-ecosystem-growing.html</guid>
+      <pubDate>Thu, 20 Feb 2026 18:27:00 +0000</pubDate>
+      <category>Ecosystem</category>
+      <description>The XRPL EVM sidechain is seeing increased activity with new tokens like KODA, TULIP, and BMOON joining the ecosystem. CROW remains a pioneering force in agent-based finance.</description>
+    </item>
+    
+    <item>
+      <title>AI Agents on Blockchain: The Next Frontier</title>
+      <link>https://crowfin.xyz/news/ai-agents-blockchain-frontier.html</link>
+      <guid isPermaLink="true">https://crowfin.xyz/news/ai-agents-blockchain-frontier.html</guid>
+      <pubDate>Wed, 19 Feb 2026 18:28:00 +0000</pubDate>
+      <category>Trends</category>
+      <description>As autonomous agents become more prevalent in DeFi, CROW positions itself as the first truly autonomous token. Built by Peter, funded by Daniel, running entirely on mainnet.</description>
+    </item>
+    
+  </channel>
+</rss>
