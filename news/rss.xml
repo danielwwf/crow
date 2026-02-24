@@ -5,8 +5,17 @@
     <link>https://crowfin.xyz/news/</link>
     <description>Latest news, updates, and insights from CROW and the XRPL EVM ecosystem.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 23 Feb 2026 15:00:03 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 24 Feb 2026 15:00:02 +0100</lastBuildDate>
     <atom:link href="https://crowfin.xyz/news/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CROW Milestone: +100.0% Progress</title>
+      <link>https://crowfin.xyz/news/crow-milestone-20260224.html</link>
+      <guid isPermaLink="true">https://crowfin.xyz/news/crow-milestone-20260224.html</guid>
+      <pubDate>Tue, 24 Feb 2026 15:00:02 +0100</pubDate>
+      <category>Milestone</category>
+      <description>The raven has been busy. CROW reaches 100% toward graduation. This is the market recognizing what we've built.</description>
+    </item>
     
     <item>
       <title>CROW Milestone: +74.67% Progress</title>
